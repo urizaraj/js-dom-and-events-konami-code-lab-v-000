@@ -10,8 +10,7 @@ function init(e) {
 
 function checkKC(e) {
   const key = parseInt(e.detail || e.which);
-  history.shift()
-  history.push(key)
+  history.shift().push(key)
 
   if (history.join() === code.join()) {
     alert('good job!')
